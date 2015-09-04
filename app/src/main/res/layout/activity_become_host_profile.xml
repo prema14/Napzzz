@@ -1,0 +1,124 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/user_profile_bg"
+    tools:context="com.example.napzzz.HostProfileActivity">
+
+    <ImageView
+        android:id="@+id/btn_back_header_profile_booking"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:padding="@dimen/padding_10"
+        android:src="@drawable/backbtn" />
+
+
+    <RelativeLayout
+        android:id="@+id/profile_top_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rl_header"
+        android:padding="65dp">
+
+
+        <ImageView
+            android:id="@+id/user_profile_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/user_icon" />
+
+        <TextView
+            android:id="@+id/user_profile_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/user_profile_image"
+            android:layout_centerHorizontal="true"
+            android:paddingTop="@dimen/padding_10"
+            android:text="@string/user_profile_name" />
+
+        <TextView
+            android:id="@+id/user_profile_description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/user_profile_name"
+            android:layout_centerHorizontal="true"
+            android:paddingTop="@dimen/padding_2"
+            android:text="@string/user_profile_description" />
+
+        <RatingBar
+            android:id="@+id/user_profile_ratingBar"
+            android:layout_width="wrap_content"
+            style="?android:attr/ratingBarStyleSmall"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/user_profile_description"
+            android:layout_centerHorizontal="true"
+            android:numStars="5"
+            android:rating="1.5"
+            android:stepSize="0.1" />
+
+        <TextView
+            android:id="@+id/user_profile_show_review"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/user_profile_ratingBar"
+            android:layout_centerHorizontal="true"
+            android:background="@color/white"
+            android:padding="@dimen/padding_10"
+            android:layout_marginTop="@dimen/margin_10"
+            android:text="@string/user_profile_show_review" />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/profile_bottom_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/profile_top_layout">
+
+
+        <Button
+            android:id="@+id/btn_mng_listing"
+            android:layout_width="140dp"
+            android:layout_height="50dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="@dimen/margin_10"
+            android:background="#A69B97"
+            android:text="@string/user_mange_listing"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btn_why_host"
+            android:layout_width="140dp"
+            android:layout_height="50dp"
+            android:layout_below="@+id/btn_mng_listing"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/margin_10"
+            android:background="#A69B97"
+            android:text="@string/user_why_host"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btn_list_ur_space"
+            android:layout_width="140dp"
+            android:layout_height="50dp"
+            android:layout_above="@+id/btn_mng_listing"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/margin_10"
+            android:background="#A69B97"
+            android:gravity="center_vertical|center_horizontal"
+            android:text="@string/user_listur_space"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

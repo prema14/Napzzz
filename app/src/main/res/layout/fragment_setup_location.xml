@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/details_bg"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/btn_back"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="left"
+            android:layout_margin="@dimen/margin_10"
+            android:background="@drawable/backbtn" />
+
+        <Button
+            android:id="@+id/btn_next"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_margin="@dimen/margin_10"
+            android:background="@mipmap/nextbtn" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/margin_10"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/set_up_location"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <View
+            android:layout_width="180dp"
+            android:layout_height="1.5dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/margin_20"
+            android:background="@color/white" />
+
+    </LinearLayout>
+
+
+    <EditText
+        android:id="@+id/addadressEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin_50"
+        android:layout_marginRight="@dimen/margin_50"
+        android:background="@drawable/rounded_edittext"
+        android:gravity="center"
+        android:hint="@string/add_address"
+        android:imeOptions="actionNext"
+        android:inputType="textMultiLine"
+        android:layout_marginTop="@dimen/margin_20"
+        android:lines="2"
+        android:scrollHorizontally="false"
+
+        />
+
+
+    <EditText
+        android:id="@+id/putlocationEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounded_edittext"
+        android:layout_marginLeft="@dimen/margin_20"
+        android:layout_marginRight="@dimen/margin_20"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/margin_20"
+        android:hint="@string/my_address"
+        android:imeOptions="actionNext"
+        android:inputType="textMultiLine"
+        android:lines="2"
+        android:scrollHorizontally="false"
+
+        />
+
+    <FrameLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <Button
+            android:id="@+id/btn_finish"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Finish"
+            android:layout_gravity="bottom|center_horizontal"
+
+
+            />
+
+    </FrameLayout>
+</LinearLayout>

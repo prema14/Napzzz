@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:orientation="vertical"
+
+    >
+
+    <RelativeLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/theme_color"
+
+        >
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/header_color"
+            android:minHeight="?attr/actionBarSize"
+
+            >
+
+
+            <ImageView
+                android:id="@+id/left_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="invisible"
+                android:layout_gravity="left|center_vertical"
+                android:src="@drawable/backbtn" />
+
+            <ImageView
+                android:id="@+id/img_napzzLogo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:src="@mipmap/napz_logo" />
+
+            <ImageView
+                android:id="@+id/right_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right|center_vertical"
+                android:layout_marginRight="@dimen/margin_10"
+                android:visibility="invisible"
+                android:src="@drawable/nextheaderbtn" />
+
+
+        </android.support.v7.widget.Toolbar>
+
+
+    </RelativeLayout>
+
+
+</LinearLayout>

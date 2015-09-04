@@ -1,0 +1,362 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/details_bg"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rl_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true">
+
+        <include
+            android:id="@+id/footerId"
+            layout="@layout/tool_bar_header" />
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="@dimen/padding_10"
+        android:text="SEARCH FILTER"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <View
+        android:layout_width="180dp"
+        android:layout_height="0.5dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/margin_10"
+        android:background="@color/white" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+
+        android:gravity="center"
+        android:text="Listing type"
+        android:textColor="@color/white" />
+
+    <Spinner
+        android:id="@+id/filterSpinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="76dp"
+        android:layout_marginRight="76dp"
+        android:layout_marginTop="@dimen/margin_10"
+        android:background="@drawable/rounded_edittext"
+        android:gravity="center_horizontal" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin_20"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <TextView
+            android:id="@+id/txt_minprice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:text="Min Price"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/filter_minprice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/txt_minprice"
+            android:layout_marginLeft="@dimen/margin_5"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/filter_maxprice"
+            android:layout_marginRight="@dimen/margin_5"
+            android:text="Max Price"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/filter_maxprice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:textColor="@color/white" />
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:id="@+id/ll_seekbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin_10"
+        android:layout_marginRight="@dimen/margin_10"
+        android:layout_marginTop="@dimen/margin_5"
+        android:orientation="horizontal">
+
+        <SeekBar
+            android:id="@+id/filterSeekBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="@dimen/margin_10"
+            android:layout_marginRight="@dimen/margin_10"
+            android:progressDrawable="@drawable/progress_drawable"
+            android:thumb="@mipmap/seekbar_image"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="@dimen/margin_5"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:padding="@dimen/margin_5">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Bathroom"
+                android:textColor="@color/white" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_10"
+                android:orientation="horizontal"
+                android:weightSum="3">
+
+                <ImageView
+                    android:id="@+id/imageViewFilterbathroomLft"
+                    android:layout_width="30dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:background="@mipmap/arrw" />
+
+                <TextView
+                    android:id="@+id/etextbathroom"
+                    android:layout_width="70dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/margin_10"
+                    android:layout_weight="1"
+
+                    android:background="@drawable/rounded_edittext"
+                    android:gravity="center_vertical"
+                    android:imeOptions="actionNext"
+                    android:lines="2"
+                    android:paddingLeft="@dimen/margin_20"
+                    android:paddingRight="@dimen/margin_20"
+                    android:text="1" />
+
+                <ImageView
+                    android:id="@+id/imageViewFilterbathroomRht"
+                    android:layout_width="30dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/margin_10"
+                    android:layout_weight="1"
+                    android:background="@mipmap/arrw_right" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:text="Beds"
+                android:textColor="@color/white" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_10"
+                android:orientation="horizontal"
+                android:weightSum="3">
+
+                <ImageView
+                    android:id="@+id/imageViewFilterroomLft"
+                    android:layout_width="30dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:background="@mipmap/arrw" />
+
+                <TextView
+                    android:id="@+id/etextroom"
+                    android:layout_width="70dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/margin_10"
+                    android:layout_weight="1"
+
+                    android:background="@drawable/rounded_edittext"
+                    android:gravity="center_vertical"
+                    android:imeOptions="actionNext"
+                    android:lines="2"
+                    android:paddingLeft="@dimen/margin_20"
+                    android:paddingRight="@dimen/margin_20"
+                    android:text="1" />
+
+                <ImageView
+                    android:id="@+id/imageViewFilterroomRht"
+                    android:layout_width="30dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/margin_10"
+                    android:layout_weight="1"
+                    android:background="@mipmap/arrw_right" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="0.5dp"
+            android:layout_height="180dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="@dimen/margin_10"
+            android:layout_marginTop="@dimen/margin_relative_layout_20dp"
+            android:background="@color/white" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:padding="@dimen/margin_5">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Rooms"
+                android:textColor="@color/white" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_10"
+                android:orientation="horizontal"
+                android:weightSum="3"
+
+                >
+
+                <ImageView
+                    android:id="@+id/imageViewFilterBedLft"
+                    android:layout_width="30dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+
+                    android:background="@mipmap/arrw" />
+
+                <TextView
+                    android:id="@+id/etextbed"
+                    android:layout_width="70dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/margin_10"
+                    android:layout_weight="1"
+
+                    android:background="@drawable/rounded_edittext"
+                    android:gravity="center_vertical"
+                    android:imeOptions="actionNext"
+                    android:lines="2"
+                    android:paddingLeft="@dimen/margin_20"
+                    android:paddingRight="@dimen/margin_20"
+                    android:text="1" />
+
+                <ImageView
+                    android:id="@+id/imageViewFilterBedRht"
+                    android:layout_width="30dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/margin_10"
+                    android:layout_weight="1"
+                    android:background="@mipmap/arrw_right" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+
+                android:gravity="center"
+                android:text="Accomodates"
+                android:textColor="@color/white" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_10"
+                android:orientation="horizontal"
+                android:weightSum="3">
+
+                <ImageView
+                    android:id="@+id/imageViewFilterOccomodatesLft"
+                    android:layout_width="30dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:background="@mipmap/arrw" />
+
+                <TextView
+                    android:id="@+id/etextoccomodates"
+                    android:layout_width="70dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/margin_10"
+                    android:layout_weight="1"
+
+                    android:background="@drawable/rounded_edittext"
+                    android:gravity="center_vertical"
+                    android:imeOptions="actionNext"
+                    android:lines="2"
+                    android:paddingLeft="@dimen/margin_20"
+                    android:paddingRight="@dimen/margin_20"
+                    android:text="1" />
+
+                <ImageView
+                    android:id="@+id/imageViewFilterOccomodatesRht"
+                    android:layout_width="30dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/margin_10"
+                    android:layout_weight="1"
+                    android:background="@mipmap/arrw_right" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnnapzzfilter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/margin_15"
+        android:layout_marginLeft="130dp"
+        android:layout_marginRight="130dp"
+        android:layout_marginTop="@dimen/margin_10"
+        android:background="@drawable/rounded_edittext"
+        android:gravity="center"
+        android:scrollHorizontally="false"
+        android:text="@string/text_apply" />
+
+</LinearLayout>

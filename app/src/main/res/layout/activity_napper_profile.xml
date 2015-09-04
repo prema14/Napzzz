@@ -1,0 +1,266 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context="com.example.napzzz.HostProfileActivity">
+
+        <LinearLayout
+            android:id="@+id/napper_top_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/user_profile_bg"
+            android:orientation="vertical"
+            android:weightSum="3">
+
+            <ImageView
+                android:id="@+id/napper_btn_back_header_profile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:padding="@dimen/padding_10"
+                android:src="@drawable/backbtn" />
+
+
+            <RelativeLayout
+                android:id="@+id/napper_profile_top_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/napper_rl_header"
+                android:layout_weight="1.3">
+
+
+                <ImageView
+                    android:id="@+id/napper_user_profle_image"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/margin_10"
+                    android:src="@drawable/user_icon" />
+
+                <TextView
+                    android:id="@+id/napper_user_profile_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/napper_user_profle_image"
+                    android:layout_centerHorizontal="true"
+                    android:paddingTop="@dimen/padding_10"
+                    android:text="@string/user_profile_name" />
+
+                <TextView
+                    android:id="@+id/napper_user_profile_description"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/napper_user_profile_name"
+                    android:layout_centerHorizontal="true"
+                    android:paddingTop="@dimen/padding_2"
+                    android:text="@string/user_profile_description" />
+
+                <RatingBar
+                    android:id="@+id/napper_user_profile_ratingBar"
+                    style="?android:attr/ratingBarStyleSmall"
+                    android:layout_width="wrap_content"
+
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/napper_user_profile_description"
+                    android:layout_centerHorizontal="true"
+                    android:isIndicator="true"
+                    android:numStars="5"
+                    android:progressBackgroundTint="@android:color/white"
+                    android:progressTint="@android:color/white"
+                    android:rating="5"
+                    android:secondaryProgressTint="@android:color/white"
+                    android:stepSize="0.1" />
+
+                <TextView
+                    android:id="@+id/napper_user_profile_show_review"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/napper_user_profile_ratingBar"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/margin_10"
+                    android:background="@drawable/rounded_edittext"
+                    android:foregroundGravity="center_horizontal"
+                    android:gravity="center_horizontal"
+                    android:padding="@dimen/padding_2"
+                    android:text="@string/user_profile_show_review" />
+
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/napper_profile_bottom_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="@dimen/padding_20">
+
+                <RelativeLayout
+                    android:id="@+id/napper_ll_varified_user"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_weight=".1">>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.2dp"
+                        android:layout_gravity="center"
+                        android:background="@color/white"
+                        android:padding="@dimen/padding_10" />
+
+                    <TextView
+                        android:id="@+id/napper_user_varified_icons"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/margin_5"
+                        android:text="@string/user_varified_icons"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="@color/white"
+                        android:textSize="16dp" />
+
+                    <ImageView
+                        android:id="@+id/napper_doller"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="-15dp"
+                        android:layout_toLeftOf="@+id/napper_at_icon"
+                        android:padding="@dimen/padding_10"
+                        android:src="@drawable/dollor_icon" />
+
+
+                    <ImageView
+                        android:id="@+id/napper_at_icon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="-25dp"
+                        android:layout_toLeftOf="@+id/napper_phone"
+                        android:padding="@dimen/padding_10"
+                        android:src="@drawable/at_icon" />
+
+                    <ImageView
+                        android:id="@+id/napper_phone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="-25dp"
+                        android:layout_toLeftOf="@+id/napper_profile"
+                        android:padding="@dimen/padding_10"
+                        android:src="@drawable/phone_icon" />
+
+
+                    <ImageView
+                        android:id="@+id/napper_profile"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginLeft="-25dp"
+
+                        android:gravity="center_vertical"
+                        android:padding="@dimen/padding_10"
+                        android:src="@drawable/user_icon" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/napper_rl_user_birthday"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_weight=".1">>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.2dp"
+                        android:layout_gravity="center"
+                        android:background="@color/white"
+                        android:padding="@dimen/padding_10" />
+
+                    <TextView
+                        android:id="@+id/napper_user_birthday"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/margin_5"
+                        android:text="@string/user_birthday_txtview"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="@color/white"
+                        android:textSize="16dp" />
+
+                    <TextView
+                        android:id="@+id/napper_user_birthday_value"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="@dimen/margin_10"
+                        android:text="01/01/1990"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="@color/white"
+                        android:textSize="16dp" />
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/napper_rl_user_language"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_weight=".1">>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.2dp"
+                        android:layout_gravity="center"
+                        android:background="@color/white"
+                        android:padding="10dp" />
+
+                    <TextView
+                        android:id="@+id/napper_user_language"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="5dp"
+                        android:text="@string/user_language_txtview"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="@color/white"
+                        android:textSize="16dp" />
+
+                    <TextView
+                        android:id="@+id/napper_user_language_value"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="10dp"
+                        android:text="Hindi,English"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+
+                        android:textColor="@color/white"
+                        android:textSize="16dp" />
+
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.2dp"
+                    android:layout_gravity="center"
+                    android:background="@color/white"
+                    android:padding="@dimen/padding_10" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

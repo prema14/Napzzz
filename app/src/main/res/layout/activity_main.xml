@@ -1,0 +1,147 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+     >
+
+    <LinearLayout
+            android:id="@+id/maplayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/rounded_edittext"
+            android:gravity="center"
+            android:layout_margin="10dp"
+            android:visibility="visible"
+            android:layout_above="@+id/bottomLay"
+           >
+         
+            <fragment
+            android:id="@+id/map"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            class="com.google.android.gms.maps.MapFragment" />
+              
+           </LinearLayout>
+    
+     <LinearLayout 
+        android:id="@+id/bookingFiltersLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_above="@+id/hostListLayout"
+        android:layout_marginBottom="1dp"
+        android:visibility="gone"
+        >
+            
+     <Button  android:id="@+id/bookingBtn"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content" 
+              android:text="@string/booking" 
+              android:textColor="@color/white"
+              android:textStyle="bold"
+              android:layout_weight="1"
+              android:textSize="13sp"
+              android:background="@color/dark_grey" 
+              />
+      
+              
+     <Button  android:id="@+id/filtersBtn"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content" 
+              android:text="@string/filters" 
+              android:layout_weight="1"
+              android:textColor="@color/white"
+              android:textStyle="bold"
+              android:layout_marginLeft="1dp"
+              android:textSize="13sp"
+              android:background="@color/dark_grey"  /> 
+        
+        
+    </LinearLayout>
+    
+     <LinearLayout 
+        android:id="@+id/hostListLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_above="@+id/bottomLay"
+        android:layout_marginBottom="1dp"
+        android:visibility="gone"
+        >
+            
+     <Button  android:id="@+id/whyHostBtn"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content" 
+              android:text="@string/why_host" 
+              android:textColor="@color/white"
+              android:textStyle="bold"
+              android:layout_weight="1"
+              android:textSize="12sp"
+              android:background="@color/dark_grey" 
+              />
+      
+              
+     <Button  android:id="@+id/listYourSpaceBtn"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content" 
+              android:text="@string/list_your" 
+              android:layout_weight="1"
+              android:textColor="@color/white"
+              android:textStyle="bold"
+              android:layout_marginLeft="1dp"
+              android:textSize="12sp"
+              android:background="@color/dark_grey"  /> 
+        
+        
+    </LinearLayout>
+    
+    
+    <LinearLayout 
+        android:id="@+id/bottomLay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        
+        >
+        
+       <!--  <LinearLayout 
+        android:id="@+id/hostingLay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_weight="1"
+        android:background="@color/dark_grey" 
+        >
+        
+            <ImageView  
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@drawable/success"  /> -->
+            
+     <Button  android:id="@+id/hostingBtn"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content" 
+              android:text="@string/hosting" 
+              android:textColor="@color/white"
+              android:textStyle="bold"
+              android:layout_weight="1"
+              android:background="@color/dark_grey" 
+              />
+      
+           <!--    </LinearLayout> -->
+              
+     <Button  android:id="@+id/napperzBtn"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content" 
+              android:text="@string/napperz" 
+              android:layout_weight="1"
+              android:textColor="@color/white"
+              android:textStyle="bold"
+              android:layout_marginLeft="1dp"
+              android:background="@color/dark_grey"  /> 
+        
+        
+    </LinearLayout>
+
+</RelativeLayout>

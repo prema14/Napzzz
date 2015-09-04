@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/setup_price_fragment_container"
+    android:background="@mipmap/details_bg">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/btn_back_setup_price"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="left"
+            android:layout_margin="@dimen/margin_button"
+            android:background="@drawable/backbtn" />
+
+        <Button
+            android:id="@+id/btn_next_setup_price"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_margin="@dimen/margin_button"
+            android:background="@mipmap/nextbtn" />
+
+    </RelativeLayout>
+
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:text="@string/setUp_Price"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:gravity="center"/>
+
+    <View
+        android:layout_width="180dp"
+        android:layout_height="1.5dp"
+        android:background="@color/white"
+        android:layout_marginTop="@dimen/margin_relative_layout_20dp"
+        android:layout_gravity="center_horizontal"
+        />
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:text="@string/set_price"
+        android:textColor="@color/white"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/margin_20">
+
+        <EditText
+            android:id="@+id/onehoueEditText"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:lines="2"
+            android:maxLines="2"
+            android:hint="@string/one_hr"
+            android:padding="5dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:background="@drawable/rounded_edittext"
+            android:inputType="textMultiLine"
+            android:scrollHorizontally="false"
+            android:imeOptions="actionNext"
+            android:layout_marginLeft="@dimen/margin_20"
+
+            />
+
+
+        <EditText
+            android:id="@+id/twintyfiveEditText"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:lines="2"
+            android:maxLines="2"
+            android:hint="@string/twnty_five"
+            android:padding="5dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:background="@drawable/rounded_edittext"
+            android:inputType="textMultiLine"
+            android:scrollHorizontally="false"
+            android:imeOptions="actionNext"
+            android:layout_marginLeft="@dimen/margin_20"
+
+            />
+
+    </LinearLayout>
+    <View
+        android:layout_width="180dp"
+        android:layout_height="1.5dp"
+        android:background="@color/white"
+        android:layout_marginTop="@dimen/margin_relative_layout_20dp"
+        android:layout_gravity="center_horizontal"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/margin_20"
+        android:layout_marginTop="@dimen/margin_20">
+
+        <EditText
+            android:id="@+id/threehourEditText"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:lines="2"
+            android:maxLines="2"
+            android:hint="@string/three_hr"
+            android:padding="5dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:background="@drawable/rounded_edittext"
+            android:inputType="textMultiLine"
+            android:scrollHorizontally="false"
+            android:imeOptions="actionNext"
+            android:layout_marginLeft="@dimen/margin_20"
+
+            />
+
+
+        <EditText
+            android:id="@+id/zeroEditText"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:lines="2"
+            android:maxLines="2"
+            android:hint="@string/Doller_zero"
+            android:padding="5dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:background="@drawable/rounded_edittext"
+            android:inputType="textMultiLine"
+            android:scrollHorizontally="false"
+            android:imeOptions="actionNext"
+            android:layout_marginLeft="@dimen/margin_20"
+
+            />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/margin_20">
+
+        <EditText
+            android:id="@+id/sixEditText"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:lines="2"
+            android:maxLines="2"
+            android:hint="@string/six_hr"
+            android:padding="5dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:background="@drawable/rounded_edittext"
+            android:inputType="textMultiLine"
+            android:scrollHorizontally="false"
+            android:imeOptions="actionNext"
+            android:layout_marginLeft="@dimen/margin_20"
+
+            />
+
+
+        <EditText
+            android:id="@+id/zero1EditText"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:lines="2"
+            android:maxLines="2"
+            android:hint="@string/Doller_zero"
+            android:padding="5dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:background="@drawable/rounded_edittext"
+            android:inputType="textMultiLine"
+            android:scrollHorizontally="false"
+            android:imeOptions="actionNext"
+            android:layout_marginLeft="@dimen/margin_20"
+
+            />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/margin_20">
+
+        <EditText
+            android:id="@+id/tenEditText"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:lines="2"
+            android:maxLines="2"
+            android:hint="@string/ten_hr"
+            android:padding="5dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:background="@drawable/rounded_edittext"
+            android:inputType="textMultiLine"
+            android:scrollHorizontally="false"
+            android:imeOptions="actionNext"
+            android:layout_marginLeft="@dimen/margin_20"
+
+            />
+
+
+        <EditText
+            android:id="@+id/zero2EditText"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:lines="2"
+            android:maxLines="2"
+            android:hint="@string/Doller_zero"
+            android:padding="5dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:background="@drawable/rounded_edittext"
+            android:inputType="textMultiLine"
+            android:scrollHorizontally="false"
+            android:imeOptions="actionNext"
+            android:layout_marginLeft="@dimen/margin_20"
+
+            />
+
+    </LinearLayout>
+</LinearLayout>

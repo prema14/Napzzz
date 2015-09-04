@@ -1,0 +1,182 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/details_bg"
+    >
+    <RelativeLayout
+        android:id="@+id/rl_backHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/btn_back_details"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="left"
+
+            android:layout_margin="@dimen/margin_button"
+            android:background="@drawable/backbtn"
+            />
+        <Button
+            android:id="@+id/btn_next_details"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+
+            android:layout_alignParentRight="true"
+
+            android:layout_margin="@dimen/margin_button"
+            android:background="@mipmap/nextbtn"
+            />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:layout_above="@+id/bottomLay"
+        android:scrollbars="none"
+        android:padding="20dp"
+        android:layout_below="@+id/rl_backHeader">
+
+        <LinearLayout
+            android:id="@+id/headerLayout"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:gravity="center|top"
+            android:orientation="vertical"
+
+            >
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:text="@string/details"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:gravity="center"/>
+            <View
+                android:layout_width="180dp"
+                android:layout_height="1.5dp"
+
+                android:background="@color/white"
+
+                android:layout_marginTop="@dimen/margin_relative_layout_20dp"
+
+                android:layout_gravity="center_horizontal"
+                />
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:text="@string/description"
+
+                android:textColor="@color/white"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                />
+
+            <EditText
+                android:id="@+id/messageEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:lines="4"
+                android:maxLines="4"
+                android:hint="@string/type_here"
+                android:padding="5dp"
+                android:layout_marginTop="10dp"
+                android:gravity="top|left"
+
+                android:background="@drawable/rounded_edittext"
+                android:inputType="textMultiLine"
+                android:scrollHorizontally="false"
+
+                android:imeOptions="actionNext"
+
+                />
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:text="@string/rules"
+                android:textColor="@color/white"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                />
+            <View
+                android:layout_width="180dp"
+                android:layout_height="1.5dp"
+
+                android:background="@color/white"
+
+                android:layout_marginTop="@dimen/margin_relative_layout_20dp"
+
+                android:layout_gravity="center_horizontal"
+                />
+            <!--      <Button
+              android:layout_height="wrap_content"
+              android:layout_width="match_parent"
+              android:text="@string/add_rules"
+              android:textColor="@color/dark_grey"
+              android:background="@mipmap/add_tags"
+              android:gravity="center"
+               android:layout_marginTop="10dp"
+                    />-->
+            <EditText
+                android:id="@+id/edt_Rules"
+
+                android:layout_width="match_parent"
+
+                android:layout_height="wrap_content"
+
+                android:hint="@string/add_rules"
+                android:padding="3dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+
+                android:background="@drawable/rounded_edittext"
+
+                android:inputType="textMultiLine"
+
+                android:scrollHorizontally="false"
+                android:imeOptions="actionNext"
+
+                android:drawableRight="@mipmap/down_arw"
+                />
+
+            <Button
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:text="@string/no_smoking"
+
+                android:textColor="@color/dark_grey"
+                android:background="@drawable/no_pets"
+                android:gravity="center"
+                android:layout_marginTop="10dp"
+                />
+
+            <Button
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:text="@string/no_pets"
+
+                android:textColor="@color/dark_grey"
+                android:background="@drawable/no_pets"
+                android:gravity="center"
+                android:layout_marginTop="10dp"
+                />
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:text="@string/perks"
+                android:textColor="@color/white"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                />
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>
